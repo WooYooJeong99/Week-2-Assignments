@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+
+#ex_01 {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+#ex_01 > .pd_box .img_part{
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/product.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 auto;
+  position: relative;
+}
+#ex_01 > .pd_box .img_part > img:nth-child(1){
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#ex_01 > .pd_box .img_part > img:nth-child(2){
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+#ex_01 > .pd_box > .txt_part {
+  margin: 20px 0;
+}
+
+#ex_01 > .pd_box > .txt_part > h3{
+  font-size: 16px;
+  color: #555;
+
+}
+
+#ex_01 > .pd_box > .txt_part > p{
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0 0 0;
+}
+
+#ex_01 > .pd_box > .txt_part > span{
+  font-size: 20px;
+  color: #f27935;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+#ex_02::after{
+  content: "";
+}
+
+#ex_02 > .wrap{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  background-color: #88ccff;
+}
+
+#ex_02 > .wrap > .pd_box{
+  height: 280px;
+  width: calc(25% - 10px);
+  float: left;
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  color: #999;
+  margin: 0 10px;
+  display: flex;
+}
+#ex_02 > .wrap > .pd_box:hover{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#ex_02 > .wrap > .pd_box:nth-child(1){
+  background-image: url(../img/disney_01.jpg);
+
+}
+#ex_02 > .wrap > .pd_box:nth-child(2){
+  background-image: url(../img/disney_02.jpg);
+}
+#ex_02 > .wrap > .pd_box:nth-child(3){
+  background-image: url(../img/disney_03.jpg);
+}
+#ex_02 > .wrap > .pd_box:nth-child(4){
+  background-image: url(../img/disney_04.jpg);
+}
+
+#ex_02 > .wrap > .pd_box > p{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#ex_03 > .wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #ffcc88;
+  text-align: center;
+  display: flex;
+  
+}
+
+.title_part > h3{
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin: 40px 0;
+
+}
+
+.cont_part .ch_box{
+  height: 280px;
+  width: calc(1200px / 4);
+  display: inline-block;
+  background-color: #fff;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+.cont_part .ch_box:nth-child(1){
+  background-image: url(../img/kakao_01.gif);
+}
+.cont_part > .ch_box:nth-child(2){
+  background-image: url(../img/kakao_02.gif);
+}
+.cont_part > .ch_box:nth-child(3){
+  background-image: url(../img/kakao_03.gif);
+}
+.cont_part > .ch_box:nth-child(4){
+  background-image: url(../img/kakao_04.gif);
+}
+
+.cont_part > .ch_box:hover p{
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 40px;
+  bottom: 0;
+  position: absolute;
+  text-align:center;
+  color: #fff;
+  font-weight: bold;
+  font-style: 15px;
+  width: calc(1200px / 4);
+}
+
+#ex_04::after{
+  content: "";
+}
+
+#ex_04 .wrap > .title_part > h3{
+  font-style: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#ex_04 .cont_part > .pd_box{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 280px;
+  display: inline-block;
+
+}
+
+#ex_04 .wrap{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #e7e7e7;
+  height: 780px;
+}
+
+
+#ex_04 .wrap .pd_box{
+  height: 280px;
+  width: calc(25% - 20px);
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  color: #999;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  float: left;
+}
+
+#ex_04 .wrap .cont_part > .pd_box > .img_part{
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: calc(1200px /4);
+  text-align: center;
+  padding: 10px;
+}
+
+
+#ex_04 .pd_box:nth-child(1) > .img_part{
+  background-image: url(../img/class_01.png);
+}
+
+#ex_04 .pd_box:nth-child(2) > .img_part{
+  background-image: url(../img/class_02.png);
+}
+#ex_04 .pd_box:nth-child(3) > .img_part{
+  background-image: url(../img/class_03.png);
+}
+
+#ex_04 .pd_box:nth-child(4) > .img_part{
+  background-image: url(../img/class_04.png);
+}
+#ex_04 .pd_box:nth-child(5) > .img_part{
+  background-image: url(../img/class_05.png);
+}
+
+#ex_04 .pd_box:nth-child(6) > .img_part{
+  background-image: url(../img/class_06.png);
+}
+
+#ex_04 .pd_box:nth-child(7) > .img_part{
+  background-image: url(../img/class_07.png);
+}
+
+#ex_04 .pd_box:nth-child(8) > .img_part{
+  background-image: url(../img/class_08.png);
+}
+
+#ex_04 .txt_part{
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+}
+
+#ex_04 .txt_part > h4{
+ font-style: 17px;
+ color: #555;
+ margin-bottom: 10px;
+}
+#ex_04 .txt_part > p{
+color: #777;
+font-size: 15px;
+}
